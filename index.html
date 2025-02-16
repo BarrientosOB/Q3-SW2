@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Seatwork 2: Let's Test Your Math Skills!</title>
+
+	<!-- Bootstrap Setup  -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Dancing+Script:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+
+	<!-- JS Setup -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+	<!-- External CSS -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+		
+	<div class="container mt-5 mb-5">
+		
+		<h1>Let's Test Your Math Skills!</h1>
+
+		
+
+		<form action="">
+			<label for="avalue">Give Value for a</label>
+			<input type="text"  class="form-control" name="avalue" id="a-value">
+
+			<label for="bvalue">Give Value for b</label>
+			<input type="text"  class="form-control" name="bvalue" id="b-value"></input>
+			
+			<hr/>
+
+		</form>
+			
+			<br/>
+
+		<div class="container-fluid">
+			
+			<button type="button" class="btn btn-success" onclick="area1('avalue1,bvalue1')">GET PRODUCT
+			</button>
+
+			<h3 id="value_a">The Product is</h3>
+
+			<script type="text/javascript">
+				function area1(avalue1,bvalue1){
+					var a = document.getElementById('a-value').value;
+					var b = document.getElementById('b-value').value; 
+
+					document.getElementById('value_a').innerHTML = 'The Product is '+ a * b  + '.';
+				}
+
+
+			</script>
+
+		</div>
+			
+			
+			<br/>
+
+		
+		<div class="container-fluid">
+			<button type="button" class="btn btn-danger" onclick="area2('avalue2,avalue3')">IS A GREATER B
+			</button>
+
+			<h3 id="value_b">The Answer is</h3>
+
+			<script type="text/javascript">
+				function area2(avalue2,bvalue2){
+					var a = document.getElementById('a-value').value;
+					var b = document.getElementById('b-value').value; 
+
+					document.getElementById('value_b').innerHTML = 'The Answer is '+ a > b + '.';
+				}
+
+			</script>
+
+
+
+		</div>
+		
+			
+			<br/>
+
+		
+		<div class="container-fluid">
+			
+			<button type="button" class="btn btn-info" onclick="value3('avalue3,bvalue3')">GET EXPONENT
+			</button>
+
+			<h3 id="value_c">The Exponent is</h3>
+
+			<script type="text/javascript">
+				function value3(avalue3,bvalue3){
+					var a = document.getElementById('a-value').value;
+					var b = document.getElementById('b-value').value; 
+
+					document.getElementById('value_c').innerHTML = 'The Exponent is '+ a ** b + '.';
+				}
+
+				
+
+			</script>
+			
+		</div>
+
+			
+			<br/>
+
+		
+		<div class="container-fluid">	
+			
+			<button type="button" class="btn btn-warning" onclick="value4('avalue4,bvalue4')">GET REMAINDER
+			</button>
+
+			<h3 id="value_d">The Remainder is</h3>
+
+			<script type="text/javascript">
+				function value4(avalue4,bvalue4){
+					var a = document.getElementById('a-value').value;
+					var b = document.getElementById('b-value').value; 
+
+					document.getElementById('value_d').innerHTML = 'The Remainder is '+ a % b + '.';
+				}
+
+				
+
+			</script>
+
+		</div>
+		
+			
+			<br/>
+
+		
+		<button type="button" class="text-muted" onClick="window.location.reload()">REFRESH
+			</button>
+
+			
+	</div>
+	
+
+	<footer><center><a href="https://barrientosob.github.io/Q2PROFILE/" target="_blank">Oscar Robert P. Barrientos | 9-Emerald</center></footer>
+
+</body>
+</html>
